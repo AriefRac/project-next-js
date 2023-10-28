@@ -25,7 +25,7 @@ const InputSearch = () => {
                     className=" w-full p-2 rounded"
                     ref={searchRef}
                 />
-                <button type="submit" className="absolute top-2 end-2" onClick={handleSearch}>
+                <button aria-label="Search" type="submit" className="absolute top-2 end-2" onClick={handleSearch}>
                     <MagnifyingGlass size={24} />
                 </button>
             </form>
