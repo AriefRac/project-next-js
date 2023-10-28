@@ -14,19 +14,19 @@ const Page = async ({ params: { id } }) => {
             </div>
             <div className="pt-4 px-4 flex gap-2 text-color-primary overflow-x-auto">
                 <div className="w-36 flex flex-col justify-center items-center rounded border border-color-primary p-2">
-                    <h3>PERINGKAT</h3>
+                    <h2>PERINGKAT</h2>
                     <p>{anime.data.rank}</p>
                 </div>
                 <div className="w-36 flex flex-col justify-center items-center rounded border border-color-primary p-2">
-                    <h3>SKOR</h3>
+                    <h2>SKOR</h2>
                     <p>{anime.data.score}</p>
                 </div>
                 <div className="w-36 flex flex-col justify-center items-center rounded border border-color-primary p-2">
-                    <h3>ANGGOTA</h3>
+                    <h2>ANGGOTA</h2>
                     <p>{anime.data.members}</p>
                 </div>
                 <div className="w-36 flex flex-col justify-center items-center rounded border border-color-primary p-2">
-                    <h3>EPISODE</h3>
+                    <h2>EPISODE</h2>
                     <p>{anime.data.episodes}</p>
                 </div>
             </div>
