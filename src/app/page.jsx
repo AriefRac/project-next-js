@@ -1,18 +1,12 @@
 import AnimeList from '@/components/AnimeList'
 import Header from '@/components/AnimeList/Header'
+import RecAnime from '@/components/RecAnime'
 import { getAnimeResponse, getNestedAnimeResponse } from '@/libs/api-libs'
 
 
 const Page = async () => {
 
   const topAnime = await getAnimeResponse("top/anime", "limit=8")
-  let recAnime = await getNestedAnimeResponse("recommendations/anime", "entry")
-  let Random = Math.floor(Math.random() * 193)
-  console.log(Random);
-
-
-  recAnime = { data: recAnime.slice(Random, Random + 8) }
-
 
   return (
     <>
@@ -22,7 +16,7 @@ const Page = async () => {
       </section>
       <section>
         <Header title="Rekomendasi" />
-        <AnimeList api={recAnime} />
+        <RecAnime />
       </section>
     </>
   )
