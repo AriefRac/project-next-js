@@ -7,6 +7,7 @@ const Page = async () => {
   const topAnime = await getAnimeResponse("top/anime", "limit=8")
   let recAnime = await getNestedAnimeResponse("recommendations/anime", "entry")
   let Random = Math.floor(Math.random() * 193)
+  console.log(Random);
 
   recAnime = { data: recAnime.slice(Random, Random + 8) }
 
